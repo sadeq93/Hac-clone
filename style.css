@@ -8,10 +8,18 @@
 /*--------------------------------- fonts --------------------------------- */
 h1{
 margin: 20px;
+width: 70%;
 }
 h2{
   margin: 20px;
   }
+h4{
+  margin: 20px;
+  }
+  h5{
+    margin: 20px 0;
+    text-align: start;
+    }
 /*---------------------------------  base styles --------------------------------- */
 body {
   background: #2f2e2a;
@@ -69,14 +77,15 @@ button a{
 }
 #main-container{
   background:#5d2f2f;
- 
+ /* overflow: auto; */
   position: relative;
   z-index: -1;
-  margin: 0;
-  padding: 0;
+  /* margin: 0 auto; */
+  max-width: 100%;
 }
 
 #welcome{
+  /* display: none; */
   background:#1b1b1b;
   color: #fff;
   padding: 150px 20px 20px 20px ;
@@ -89,14 +98,43 @@ button a{
   padding: 20px;
   
 }
+.the-concept-item{
+  margin:  30px 10px;
+}
+.the-concept-item img{
+width: 40%;
+  margin:10px;
+}
+#contact-us{
+  padding: 20px 40px;
+}
 #earn-money{
   background:#fff;
   color:#1b1b1b ;
   padding: 20px;
 }
-footer{
-  height: 400px;
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
 }
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+}
+.footer-container a{
+  color: #fff;
+  font-size: 0.8em;
+}
+.contact-container .soial-midea-logos img{
+  background-color: rgb(49, 49, 49);
+  border-radius: 100%;
+  }
+  .copyright{
+    text-align: start;
+    font-size: 10px;
+    }
 /*--------------------------------- mobile size --------------------------------- */
 .item-nav-container{
   display: flex;
@@ -106,6 +144,7 @@ footer{
 .item-one-logo{
 flex-grow: 20;
 text-align: start;
+padding: 5px;
 }
 .item-two-links{
   display: none;
@@ -127,28 +166,89 @@ text-align: start;
   margin: 0 auto;
 }
 .welcome-text h1,p{
-margin: 30px auto;
+margin: 40px auto;
 }
 .welcome-img img{
   width: 350px;
   overflow: hidden;
-  margin: 30px 20px;
+  margin: 50px 20px;
 }
-.the-concept-item img{
-  width: 100px;
-  overflow: hidden;
-  margin: 30px 20px;
+
+footer{
+  height: 1000px;
 }
+.contact-container .logo-white img{
+width: 80px;
+}
+.contact-container .soial-midea-logos img{
+  width: 40px;
+  }
 /* ---------------------------------small tablets styles--------------------------------- */
 @media screen and (min-width: 620px) {
-  #welcome {
-    padding: 10px;
-    justify-content: space-between;
-  }
+.What-is-Kizurra{
+  display: flex;
+  padding: 10px;
+
+}
+.the-concept-item{
+  margin: 10px;
+}
+.footer-container{
+  display: flex;
+  padding: 10px;
+}
+.footer-container .item{
+  margin: 10px;
+}
 /* ---------------------------------large tablets & laptops styles--------------------------------- */
 @media screen and (min-width: 960px) {
-  body {
-    font-size: 18px;
+
+  .item-two-links{
+    display: inline-block;
+    flex-grow: 20;
+  }
+  .item-two-links ul{
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  .item-two-links li{
+    margin: 0 20px;
+  }
+  header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .item-nav-container{
+    padding: 0px;
+  }
+  .item-three-logIn{
+    padding: 5px;
+  }
+  .search-bar{
+    padding: 0px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    max-width: 30%;
+    min-width: 30%;
+    
+  }
+  .item-three-logIn{
+    
+    text-align: start;
+  }
+  /* .item-four-create{
+    flex-grow: 1;
+    text-align: ;
+  } */
+  #welcome{
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+  }
   }
 /*--------------------------------- Desktop styles--------------------------------- */
 @media screen and (min-width: 1200px) {
